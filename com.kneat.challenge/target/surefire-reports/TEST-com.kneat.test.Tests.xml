@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="1" name="com.kneat.test.Tests" time="1,251.938" errors="0" skipped="11">
+<testsuite tests="4" failures="1" name="com.kneat.test.Tests" time="86.565" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
     <property name="java.vm.version" value="25.231-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ltorresb\eclipse-workspace\com.kneat.challenge"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ltorresb\Documents\kneat Challenge\Challenge\com.kneat.challenge"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\ltorresb\eclipse-workspace\com.kneat.challenge"/>
+    <property name="user.dir" value="C:\Users\ltorresb\Documents\kneat Challenge\Challenge\com.kneat.challenge"/>
     <property name="java.runtime.version" value="1.8.0_231-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%C:\Program Files\Java\jdk1.8.0_231\bin\;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin;C:\Users\ltorresb\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;%C:\Program Files\Java\jdk1.8.0_231\bin\;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin;C:\Users\ltorresb\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\EaseUS\Todo Backup\bin\x64\;."/>
     <property name="maven.conf" value="C:\apache-maven-3.6.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -65,76 +65,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.kneat.test.Tests" name="setUp" time="104.327">
-    <failure message="chrome not reachable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAN-GG1BMQ2&apos;, ip: &apos;10.212.124.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ltorresb\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 992355382f8baf807f252fb56afbef22" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=79.0.3945.130)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAN-GG1BMQ2&apos;, ip: &apos;10.212.124.130&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\ltorresb\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 992355382f8baf807f252fb56afbef22
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.kneat.test.Tests.setUp(Tests.java:25)
+  <testcase classname="com.kneat.test.Tests" name="SaunaLimerickStrandHotelListed" time="26.776">
+    <failure message="Limerick Strand Hotel should be Listed in webside with sauna filter, where true is: Listed and false is: Not listed expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Limerick Strand Hotel should be Listed in webside with sauna filter, where true is: Listed and false is: Not listed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.kneat.pages.PageValidation.Validation(PageValidation.java:31)
+	at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:44)
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@73a8dfcc
+--Executing First Test: Sauna Limerick Strand Hotel Listed--------------------------
 </system-out>
-    <system-err>Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 2688
+    <system-err>Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 39100
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-feb 19, 2020 11:22:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 20, 2020 2:58:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[1582122249.376][SEVERE]: Unable to receive message from renderer
-[1582122255.393][WARNING]: Timed out connecting to Chrome, retrying...
-[1582122259.394][WARNING]: Timed out connecting to Chrome, retrying...
 </system-err>
   </testcase>
-  <testcase classname="com.kneat.test.Tests" name="FirstTest" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="tearDown" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="setUp" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="SecondTest" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="tearDown" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="setUp" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="ThridTest" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="tearDown" time="104.328">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="setUp" time="104.329">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="ForthTest" time="104.329">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.kneat.test.Tests" name="tearDown" time="104.329">
-    <skipped/>
-  </testcase>
+  <testcase classname="com.kneat.test.Tests" name="SaunaGeorgeLimerickHotelNotListed" time="26.445"/>
+  <testcase classname="com.kneat.test.Tests" name="FiveStarsTheSavoryHotelListed" time="6.572"/>
+  <testcase classname="com.kneat.test.Tests" name="FiveStarsGeorgeLimerickHotelNotListed" time="26.772"/>
 </testsuite>

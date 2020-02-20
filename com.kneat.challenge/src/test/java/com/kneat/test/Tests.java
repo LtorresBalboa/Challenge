@@ -36,43 +36,47 @@ public class Tests {
 	}
 
 	@Test(priority = 1)
-	public void FirstTest() {
+	public void SaunaLimerickStrandHotelListed() {
 
-		System.out.println("---------------Executing First Test-------------------");
+		System.out.println("--Executing First Test: Sauna Limerick Strand Hotel Listed--------------------------");
 		pageSearch.SearchLocation();
 		pageAddFilters.SelectFilters("Sauna");
 		pageValidation.Validation("Limerick Strand Hotel");
-		System.out.println("---------------Test Passed----------------------------");
+		System.out.println("--Test Passed: Limerick Strand Hotel is listed in the webside with sauna filter-----");
+		System.out.println("");
 	}
 
 	@Test(priority = 2)
-	public void SecondTest() {
+	public void SaunaGeorgeLimerickHotelNotListed() {
 
-		System.out.println("---------------Executing Second Test------------------");
+		System.out.println("--Executing Second Test: Sauna George Limerick Hotel Not Listed----------------------");
 		pageSearch.SearchLocation();
 		pageAddFilters.SelectFilters("STARS");
 		pageValidation.Validation("George Limerick Hotel");
-		System.out.println("---------------Test Passed----------------------------");
+		System.out.println("--Test Passed: George Limerick Hotel is not listed with Sauna filter-----------------");
+		System.out.println("");
 	}
 
 	@Test(priority = 3)
-	public void ThridTest() {
+	public void FiveStarsTheSavoryHotelListed() {
 
-		System.out.println("---------------Executing Third Test-------------------");
+		System.out.println("--Executing Third Test: Five Stars The Savory Hotel Listed---------------------------");
 		pageSearch.SearchLocation();
 		pageAddFilters.SelectFilters("STARS");
 		pageValidation.Validation("The Savoy Hotel");
-		System.out.println("---------------Test Passed----------------------------");
+		System.out.println("--Test Passed: The Savoy Hotel is listed in the webside with 5 stars filter----------");
+		System.out.println("");
 	}
 
 	@Test(priority = 4)
-	public void ForthTest() {
+	public void FiveStarsGeorgeLimerickHotelNotListed() {
 
-		System.out.println("---------------Executing Fourth Test-------------------");
+		System.out.println("--Executing Fourth Test: Five Stars George Limerick Hotel Not Listed------------------");
 		pageSearch.SearchLocation();
 		pageAddFilters.SelectFilters("STARS");
 		pageValidation.Validation("George Limerick Hotel");
-		System.out.println("---------------Test Passed----------------------------");
+		System.out.println("--Test Passed: George Limerick Hotel is not listed with 5 stars filter----------------");
+		System.out.println("");
 	}
 
 }

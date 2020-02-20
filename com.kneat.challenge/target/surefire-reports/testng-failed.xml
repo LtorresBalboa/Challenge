@@ -5,11 +5,8 @@
     <classes>
       <class name="com.kneat.test.Tests">
         <methods>
-          <include name="FirstTest"/>
-          <include name="ForthTest"/>
           <include name="setUp"/>
-          <include name="SecondTest"/>
-          <include name="ThridTest"/>
+          <include name="SaunaLimerickStrandHotelListed"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.kneat.test.Tests -->

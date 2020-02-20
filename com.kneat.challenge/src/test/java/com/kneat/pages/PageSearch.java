@@ -20,7 +20,7 @@ public class PageSearch {
 		this.driver = driver;
 
 		// Wait until the web page is full loaded
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		DestinationField = By.xpath("//input[@type='search']");
 		CalendarField = By.xpath("(//span[@class='sb-date-field__icon sb-date-field__icon-btn bk-svg-wrapper calendar-restructure-sb'])[1]");
