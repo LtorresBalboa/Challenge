@@ -1,7 +1,13 @@
 package com.kneat.test;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,7 +37,17 @@ public class Tests {
 	}
 
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown(ITestResult result) {
+
+		if (!result.isSuccess()) {
+			File MyScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			try {
+				FileUtils.copyFile(MyScreenshot, new File("screenshots/errorEvidence" + System.currentTimeMillis() + ".png"));
+			} catch (Exception e) {
+				
+				e.printStackTrace();
+			}
+		}
 		driver.quit();
 	}
 
