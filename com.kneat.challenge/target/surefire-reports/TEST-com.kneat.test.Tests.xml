@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="com.kneat.test.Tests" time="86.565" errors="0" skipped="0">
+<testsuite tests="4" failures="1" name="com.kneat.test.Tests" time="94.718" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -65,25 +65,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.kneat.test.Tests" name="SaunaLimerickStrandHotelListed" time="26.776">
+  <testcase classname="com.kneat.test.Tests" name="SaunaLimerickStrandHotelListed" time="28.333">
     <failure message="Limerick Strand Hotel should be Listed in webside with sauna filter, where true is: Listed and false is: Not listed expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Limerick Strand Hotel should be Listed in webside with sauna filter, where true is: Listed and false is: Not listed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at com.kneat.pages.PageValidation.Validation(PageValidation.java:31)
-	at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:44)
+	at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:60)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@73a8dfcc
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7e774085
 --Executing First Test: Sauna Limerick Strand Hotel Listed--------------------------
 </system-out>
-    <system-err>Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 39100
+    <system-err>Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 46008
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-feb 20, 2020 2:58:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 21, 2020 12:15:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="com.kneat.test.Tests" name="SaunaGeorgeLimerickHotelNotListed" time="26.445"/>
-  <testcase classname="com.kneat.test.Tests" name="FiveStarsTheSavoryHotelListed" time="6.572"/>
-  <testcase classname="com.kneat.test.Tests" name="FiveStarsGeorgeLimerickHotelNotListed" time="26.772"/>
+  <testcase classname="com.kneat.test.Tests" name="SaunaGeorgeLimerickHotelNotListed" time="28.572"/>
+  <testcase classname="com.kneat.test.Tests" name="FiveStarsTheSavoryHotelListed" time="8.959"/>
+  <testcase classname="com.kneat.test.Tests" name="FiveStarsGeorgeLimerickHotelNotListed" time="28.854"/>
 </testsuite>

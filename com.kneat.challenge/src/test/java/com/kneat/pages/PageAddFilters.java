@@ -1,5 +1,7 @@
 package com.kneat.pages;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,6 +20,7 @@ public class PageAddFilters {
 	private By SpaFilter;
 	private By StarsFilter;
 	private By FirstELement;
+	boolean isPresent;
 
 	public PageAddFilters(WebDriver driver) {
 		this.driver = driver;
@@ -34,23 +37,29 @@ public class PageAddFilters {
 		// Wait until the web page is full loaded
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		PageHelpers pageHelpers = new PageHelpers(driver);
-		
+
 		switch (filter.toUpperCase()) {
 		case "SAUNA":
 
+			isPresent = pageHelpers.isElementPresent(SpaFilter);
+			assertTrue(isPresent, "Execution stopped due to the Filter :" + filter + " is not present");
+
 			// Scroll
 			pageHelpers.ScrollToElement(SpaFilter);
-			
-            //Select filter SPA-Sauna
+
+			// Select filter SPA-Sauna
 			driver.findElement(SpaFilter).click();
 
 			break;
+
 		case "STARS":
-			
+
+			isPresent = pageHelpers.isElementPresent(StarsFilter);
+			assertTrue(isPresent, "Execution stopped due to the Filter :" + filter + " is not present");			
 			// Scroll
 			pageHelpers.ScrollToElement(StarsFilter);
-			
-			//Select filter 5 stars
+
+			// Select filter 5 stars
 			driver.findElement(StarsFilter).click();
 
 			break;

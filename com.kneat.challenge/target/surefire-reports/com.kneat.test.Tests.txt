@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.kneat.test.Tests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 121.987 sec <<< FAILURE!
-SaunaLimerickStrandHotelListed(com.kneat.test.Tests)  Time elapsed: 26.776 sec  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 144.332 sec <<< FAILURE!
+SaunaLimerickStrandHotelListed(com.kneat.test.Tests)  Time elapsed: 28.333 sec  <<< FAILURE!
 java.lang.AssertionError: Limerick Strand Hotel should be Listed in webside with sauna filter, where true is: Listed and false is: Not listed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at com.kneat.pages.PageValidation.Validation(PageValidation.java:31)
-	at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:44)
+	at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:60)
 

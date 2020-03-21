@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="176678" started-at="2020-03-21T21:56:28Z" finished-at="2020-03-21T21:59:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="176678" started-at="2020-03-21T21:56:28Z" finished-at="2020-03-21T21:59:24Z">
+      <class name="com.kneat.test.Tests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.kneat.test.Tests@685cb137]" name="setUp" is-config="true" duration-ms="27866" started-at="2020-03-21T21:56:28Z" finished-at="2020-03-21T21:56:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="SaunaLimerickStrandHotelListed()[pri:1, instance:com.kneat.test.Tests@685cb137]" name="SaunaLimerickStrandHotelListed" duration-ms="5724" started-at="2020-03-21T21:56:55Z" finished-at="2020-03-21T21:57:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element :Sauna is not present expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element :Sauna is not present expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.kneat.pages.PageAddFilters.SelectFilters(PageAddFilters.java:45)
+at com.kneat.test.Tests.SaunaLimerickStrandHotelListed(Tests.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaunaLimerickStrandHotelListed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.kneat.test.Tests@685cb137]" name="tearDown" is-config="true" duration-ms="1615" started-at="2020-03-21T21:57:01Z" finished-at="2020-03-21T21:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SaunaLimerickStrandHotelListed status=FAILURE method=Tests.SaunaLimerickStrandHotelListed()[pri:1, instance:com.kneat.test.Tests@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.kneat.test.Tests@685cb137]" name="setUp" is-config="true" duration-ms="27588" started-at="2020-03-21T21:57:03Z" finished-at="2020-03-21T21:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SaunaGeorgeLimerickHotelNotListed()[pri:2, instance:com.kneat.test.Tests@685cb137]" name="SaunaGeorgeLimerickHotelNotListed" duration-ms="24947" started-at="2020-03-21T21:57:30Z" finished-at="2020-03-21T21:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaunaGeorgeLimerickHotelNotListed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.kneat.test.Tests@685cb137]" name="tearDown" is-config="true" duration-ms="1091" started-at="2020-03-21T21:57:55Z" finished-at="2020-03-21T21:57:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SaunaGeorgeLimerickHotelNotListed status=SUCCESS method=Tests.SaunaGeorgeLimerickHotelNotListed()[pri:2, instance:com.kneat.test.Tests@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.kneat.test.Tests@685cb137]" name="setUp" is-config="true" duration-ms="27458" started-at="2020-03-21T21:57:56Z" finished-at="2020-03-21T21:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="FiveStarsTheSavoryHotelListed()[pri:3, instance:com.kneat.test.Tests@685cb137]" name="FiveStarsTheSavoryHotelListed" duration-ms="5599" started-at="2020-03-21T21:58:24Z" finished-at="2020-03-21T21:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiveStarsTheSavoryHotelListed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.kneat.test.Tests@685cb137]" name="tearDown" is-config="true" duration-ms="1223" started-at="2020-03-21T21:58:30Z" finished-at="2020-03-21T21:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FiveStarsTheSavoryHotelListed status=SUCCESS method=Tests.FiveStarsTheSavoryHotelListed()[pri:3, instance:com.kneat.test.Tests@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.kneat.test.Tests@685cb137]" name="setUp" is-config="true" duration-ms="27506" started-at="2020-03-21T21:58:31Z" finished-at="2020-03-21T21:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="FiveStarsGeorgeLimerickHotelNotListed()[pri:4, instance:com.kneat.test.Tests@685cb137]" name="FiveStarsGeorgeLimerickHotelNotListed" duration-ms="24886" started-at="2020-03-21T21:58:58Z" finished-at="2020-03-21T21:59:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiveStarsGeorgeLimerickHotelNotListed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.kneat.test.Tests@685cb137]" name="tearDown" is-config="true" duration-ms="1142" started-at="2020-03-21T21:59:23Z" finished-at="2020-03-21T21:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FiveStarsGeorgeLimerickHotelNotListed status=SUCCESS method=Tests.FiveStarsGeorgeLimerickHotelNotListed()[pri:4, instance:com.kneat.test.Tests@685cb137] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.kneat.test.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
