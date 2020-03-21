@@ -41,7 +41,7 @@ public class PageAddFilters {
 		switch (filter.toUpperCase()) {
 		case "SAUNA":
 
-			isPresent = pageHelpers.isElementPresent(SpaFilter);
+			isPresent = pageHelpers.isElementPresentAndClickable(SpaFilter);
 			assertTrue(isPresent, "Execution stopped due to the Filter :" + filter + " is not present");
 
 			// Scroll
@@ -54,8 +54,8 @@ public class PageAddFilters {
 
 		case "STARS":
 
-			isPresent = pageHelpers.isElementPresent(StarsFilter);
-			assertTrue(isPresent, "Execution stopped due to the Filter :" + filter + " is not present");			
+			isPresent = pageHelpers.isElementPresentAndClickable(StarsFilter);
+			assertTrue(isPresent, "Execution stopped due to the Filter :" + filter + " is not present");
 			// Scroll
 			pageHelpers.ScrollToElement(StarsFilter);
 

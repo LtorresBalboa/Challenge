@@ -20,7 +20,7 @@ public class PageHelpers {
 		je.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(element));
 	}
 
-	public boolean isElementPresent(By element) {
+	public boolean isElementPresentAndClickable(By element) {
 
 		WebDriverWait wait = new WebDriverWait(driver, 2);
 
